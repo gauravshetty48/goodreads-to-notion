@@ -1,0 +1,3 @@
+# Local productions dependencies go here
+-r notion-py/requirements.txt
+-r GoodReadsScraper/requirements.txt
