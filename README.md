@@ -13,7 +13,8 @@ goodreads_book_to_notion(book_id, notion_token, notion_page_url)
 ```
 
 Get the Notion Token from your browser cookies for notion.so
-Get the URL of 
+
+Copy the Notion view URL from your browser
 
 
 ### Make sure that Notion Table view has the following fields of the same name
