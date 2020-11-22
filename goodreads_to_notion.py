@@ -3,7 +3,7 @@
 # # insert at 1, 0 is the script path (or '' in REPL)
 # sys.path.insert(1, '/GoodReadsScraper')
 
-from GoodReadsScraper.Books import Books
+from goodsreads_scraper.Books import Books
 from notion.client import NotionClient
 import argparse
 import sys

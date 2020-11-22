@@ -1,3 +1,3 @@
 # Local productions dependencies go here
--r notion-py/requirements.txt
--r GoodReadsScraper/requirements.txt
+notion
+git+https://github.com/gauravshetty48/GoodReadsScraper.git@master#egg=goodreads_scraper
