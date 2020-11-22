@@ -12,9 +12,13 @@ goodreads_book_to_notion(book_id, notion_token, notion_page_url)
 
 ```
 
-## Make sure that Notion Table view has the following fields of the same name
+Get the Notion Token from your browser cookies for notion.so
+Get the URL of 
 
-- Title
+
+### Make sure that Notion Table view has the following fields of the same name
+
+- title
 - Book Id
 - Author
 - Cover
@@ -23,6 +27,8 @@ goodreads_book_to_notion(book_id, notion_token, notion_page_url)
 
 Exclusive Shelf is the shelf that records reading status. to-read, currently-reading and read.
 Exclusive Shelf by default is to-read as there is no authentication with GoodReads yet.
+
+Except Cover, all fields are from the GoodReads export file.
 
 ## Future TODO:
 
