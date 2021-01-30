@@ -1,5 +1,5 @@
-from goodreads_to_notion import goodreads_book_to_notion
-from typing import Optional
+# from goodreads_to_notion import goodreads_book_to_notion
+# from typing import Optional
 from bs4_goodreads import get_read_book_list
 from fastapi import FastAPI
 
