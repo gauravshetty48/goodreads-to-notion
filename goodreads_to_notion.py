@@ -48,4 +48,4 @@ def goodreads_book_to_notion(book_id, notion_token, notion_page_url):
         row.Number_of_Pages = book["Number of Pages"]
         row.Cover = book["Cover"]
 
-    print(row)
+    return book
