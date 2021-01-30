@@ -16,7 +16,7 @@ dataclasses==0.8
 dictdiffer==0.8.1
 fastapi==0.63.0
 Flask==1.1.2
-goodreads-scraper-gauravshetty48==0.0.1
+# goodreads-scraper-gauravshetty48==0.0.1
 h11==0.12.0
 hyperlink==21.0.0
 idna==2.10
