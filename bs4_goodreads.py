@@ -69,3 +69,30 @@ def get_read_book_list(book_list_id):
             all_books['books'].append(rows.copy())
 
     return all_books
+
+
+def get_goodreads_book(book_id):
+    url = f"https://www.goodreads.com/book/show/{book_id}"
+
+    # Make a GET request to fetch the raw HTML content
+    html_content = requests.get(url).text
+
+    # Parse the html content
+    soup = BeautifulSoup(html_content, "lxml")
+    #
+    # row.title = book["Title"]
+    # row.Author = book["Author"]
+    # row.Book_Id = book["Book Id"]
+    # row.Exclusive_Shelf = "to-read"
+    # row.Number_of_Pages = book["Number of Pages"]
+    # row.Cover = book["Cover"]
+    book = {}
+
+    book['title'] = soup.find("h1", attrs={"id": "bookTitle"}).text.replace('\n', ' ').strip()
+    book['author'] = soup.find("a", attrs={"class": "authorName"}).span.text.replace('\n', ' ').strip()
+    book['shelf'] = 'to-read'
+    book['num_pages'] = int(soup.find("div", attrs={"id": "details"})
+                            .div.find("span", attrs={"itemprop": "numberOfPages"}).text.replace(' pages', ''))
+    book['cover'] = soup.find("div", attrs={"class": "bookCoverPrimary"}).a.img['src']
+
+    return book
