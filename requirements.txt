@@ -30,8 +30,8 @@ langdetect==1.0.7
 lxml==4.3.1
 MarkupSafe==1.1.1
 mistletoe==0.7.2
-notion==0.0.27
-notion-py==0.0.8
+notion==0.0.28
+# notion-py==0.0.8
 
 parsel==1.6.0
 Protego==0.1.16
